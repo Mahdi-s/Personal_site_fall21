@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #00A19D;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  margin: auto;
+  float: left;
+  /* width: 33.33%; */
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: #FFF8E5;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #E05D5D;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #FFE194;
+}
+
+.btn.active {
+  background-color: #FFB319;
+  color: white;
+}
+
+/* Dropdown Button */
+.btn {
+  background-color: #E05D5D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: absolute;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.btn:hover, .dropdown:hover .btn  {
+  background-color: #0b7dda;
+}
+
+.wrapper {
+    width: 500px;
+} 
+.element {
+  display: inline-block;
+
+  background: #00A19D;
+}
+
+
+</style>
+</head>
+<body>
+
+  <script src="https://kit.fontawesome.com/7df1ff1d72.js" crossorigin="anonymous"></script>
+
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+  <div class="wrapper">
+    <div class="element">
+      <img src="imgs/yoga_bitmoji.png" alt="Bitmoji" style="width:30%">
+    </div>
+    <div class="element">
+      <p>Hey welcome to my little corner of the cyber land. Feel free to take a look around. I've listed some of my project below. </p>
+      <button type="button" class="btn" onclick=" window.open('https://www.linkedin.com/in/mahdi-saeedi-324303149/')"target="_blank" > <i class="fab fa-linkedin"></i> Linkedin</button>
+      <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s')"target="_blank" > <i class="fab fa-github"></i> Github</button>
+      <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s')"target="_blank" > <i class="fas fa-scroll"></i> Resume</button>
+      <!-- <button type="button" class="btn" onclick=" window.open('https://www.kaggle.com/mahdi13')"target="_blank" > <i class="fab fa-kaggle"></i> Kaggle</button>
+      <button type="button" class="btn" onclick=" window.open('https://www.hackerrank.com/Mahdi_saeedi')"target="_blank" ><i class="fab fa-hackerrank"></i> HackerRank</button> -->
+    </div>
+    
+  </div>
+  
+
+<!-- <hr> -->
+
+<h2>Projects</h2>
+
+<!-- Font Awesome Icon Library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- <button class="btn">Filter</button>
+<div class="dropdown">
+  <button class="btn" style="border-left:1px solid navy">
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content">
+    <a href="#" onclick="filterSelection('all')"> Show all</a>
+    <a href="#" onclick="filterSelection('all')"> Show all</a>
+    <a href="#" onclick="filterSelection('all')"> Show all</a>
+  </div>
+</div> -->
+
+<!-- <div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('nature')"> Nature</button>
+  <button class="btn" onclick="filterSelection('cars')"> Cars</button>
+  <button class="btn" onclick="filterSelection('people')"> People</button>
+</div> -->
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="imgs/matlab_jamming.jpeg" alt="Mountains" style="width:100%">
+      <h4>Simulating Wireless Communication to study effects of elementary high-powered jamming attacks</h4>
+      <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s')"target="_blank" > <i class="fab fa-github"></i> Code</button>
+      <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s')"target="_blank" > <i class="fas fa-scroll"></i> Notes</button>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="content">
+    <img src="imgs/decision_tree.png" alt="Lights" style="width:100%">
+      <h4>Classifying jammed signals using Random Forest Decision Tree Algorithm</h4>
+      <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s')"target="_blank" > <i class="fab fa-github"></i> Code</button>
+      <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s')"target="_blank" > <i class="fas fa-scroll"></i> Notes</button>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="content">
+    <img src="imgs/ttt_game.png" alt="Nature" style="width:100%">
+      <h4>Tic Tac Toe Game - MIPS Assembly implementation - Player vs Computer</h4>
+      <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s')"target="_blank" > <i class="fab fa-github"></i> Code</button>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="content">
+      <img src="/w3images/cars1.jpg" alt="Car" style="width:100%">
+      <h4>Mini Pascal to MIPS Assembly translator - Python implementaion</h4>
+      <p>Translates, and reduces pascal code to executable MIPS Assembly code</p>
+      <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s')"target="_blank" > <i class="fab fa-github"></i> Code</button>
+      <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s')"target="_blank" > <i class="fas fa-scroll"></i> Notes</button>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="imgs/angur.PNG" alt="Car" style="width:100%">
+      <h4><a href="https://anguranalytics.webflow.io/" target="_blank">www.anguranalytics.com</a></h4>
+      <p>Python web application that allows users to quickly access finacial, and news data about a company traded in NYSE. Predict next day's closing price of a certain stock using an LSTM neural network trained on trading data avaliable on 30 prior days. </p>
+      <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s')"target="_blank" > <i class="fab fa-github"></i> Code</button>
+      <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s')"target="_blank" > <i class="fas fa-scroll"></i> Notes</button>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="/w3images/cars3.jpg" alt="Car" style="width:100%">
+    <h4>Air Traffic Managment GUI - C# implementation</h4>
+    <p>mock user interface for an air traffic control unit. Shows airplane entering and existing an air space, allows for modifying background map.</p>
+    <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s')"target="_blank" > <i class="fab fa-github"></i> Code</button>
+    <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s')"target="_blank" > <i class="fas fa-scroll"></i> Notes</button>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="content">
+      <img src="/w3images/people1.jpg" alt="Car" style="width:100%">
+      <h4>Simulating network of UAVs to extract communication information</h4>
+      <p>Developed a script that simulate network of UAVs, allowing the user to exract metainformation about the signals transmited and recieved by the UAVs. number of UAVs is determined by the user.</p>
+      <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s')"target="_blank" > <i class="fab fa-github"></i> Code</button>
+      <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s')"target="_blank" > <i class="fas fa-scroll"></i> Notes</button>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="/w3images/people2.jpg" alt="Car" style="width:100%">
+    <h4>Study of immposibility theorem for gerrymandering</h4>
+    <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s')"target="_blank" > <i class="fab fa-github"></i> Code</button>
+    <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s')"target="_blank" > <i class="fas fa-scroll"></i> Notes</button>
+    </div>
+  </div>
+
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+</body>
+</html>
