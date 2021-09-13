@@ -13,6 +13,8 @@ body {
   font-family: Arial;
 }
 
+
+
 /* Center website */
 .main {
   max-width: 1000px;
@@ -38,8 +40,9 @@ h1 {
 .column {
   margin: auto;
   float: left;
-  /* width: 33.33%; */
-  display: none; /* Hide all elements by default */
+  width: 90%; 
+  
+  display: flex; /* Hide all elements by default */
 }
 
 /* Clear floats after rows */ 
@@ -53,6 +56,7 @@ h1 {
 .content {
   background-color: #FFF8E5;
   padding: 10px;
+ 
 }
 
 /* The "show" class is added to the filtered elements */
@@ -133,6 +137,10 @@ h1 {
   background: #00A19D;
 }
 
+.top-text{
+ color: #FFFFFF;
+}
+
 
 </style>
 </head>
@@ -149,7 +157,7 @@ h1 {
       <img src="imgs/yoga_bitmoji.png" alt="Bitmoji" style="width:30%">
     </div>
     <div class="element">
-      <p>Hey welcome to my little corner of the cyber land. Feel free to take a look around. I've listed some of my project below. </p>
+      <p class="top-text">Hey welcome to my little corner of the cyber land. Feel free to take a look around. I've listed some of my project below. </p>
       <button type="button" class="btn" onclick=" window.open('https://www.linkedin.com/in/mahdi-saeedi-324303149/')"target="_blank" > <i class="fab fa-linkedin"></i> Linkedin</button>
       <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s')"target="_blank" > <i class="fab fa-github"></i> Github</button>
       <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s')"target="_blank" > <i class="fas fa-scroll"></i> Resume</button>
@@ -162,7 +170,7 @@ h1 {
 
 <!-- <hr> -->
 
-<h2>Projects</h2>
+<h2 class="top-text">Projects</h2>
 
 <!-- Font Awesome Icon Library -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
