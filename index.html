@@ -41,7 +41,8 @@ h1 {
   margin: auto;
   float: center;
   width: 90%; 
-  height: 30%;
+  height: 90%;
+  flex: 1 1 0px;
   display: flex; /* Hide all elements by default */
 }
 
@@ -56,7 +57,6 @@ h1 {
 .content {
   background-color: #FFF8E5;
   padding: 10px;
- 
 }
 
 /* The "show" class is added to the filtered elements */
@@ -129,12 +129,13 @@ h1 {
 }
 
 .wrapper {
-    width: 90%;
+    /* width: 90%; */
     float: center;
+    display: flex;
 } 
-.element {
+.pic-element {
   display: inline-block;
-
+  
   background: #00A19D;
 }
 
@@ -154,13 +155,16 @@ h1 {
 <div class="main">
 
   <div class="wrapper">
-    <div class="element">
-      <img src="imgs/yoga_bitmoji.png" alt="Bitmoji" style="width:30%">
+
+    <div class="pic-element">
+      <img src="imgs/yoga_bitmoji.png" alt="Bitmoji" style="width:100%">
     </div>
-    <div class="element">
+
+    <div class="">
       <p class="top-text">Hey welcome to my little corner of the cyber land. Feel free to take a look around. I've listed some of my project below. </p>
       <button type="button" class="btn" onclick=" window.open('https://www.linkedin.com/in/mahdi-saeedi-324303149/')"target="_blank" > <i class="fab fa-linkedin"></i> Linkedin</button>
       <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s')"target="_blank" > <i class="fab fa-github"></i> Github</button>
+      <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s')"target="_blank" > <i class="fas fa-blog"></i> Blog</button>
       <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s')"target="_blank" > <i class="fas fa-scroll"></i> Resume</button>
       <!-- <button type="button" class="btn" onclick=" window.open('https://www.kaggle.com/mahdi13')"target="_blank" > <i class="fab fa-kaggle"></i> Kaggle</button>
       <button type="button" class="btn" onclick=" window.open('https://www.hackerrank.com/Mahdi_saeedi')"target="_blank" ><i class="fab fa-hackerrank"></i> HackerRank</button> -->
@@ -201,7 +205,8 @@ h1 {
     <div class="content">
       <img src="imgs/matlab_jamming.jpeg" alt="Mountains" style="width:100%">
       <h4>Simulating Wireless Communication to study effects of elementary high-powered jamming attacks</h4>
-      <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s')"target="_blank" > <i class="fab fa-github"></i> Code</button>
+      <p>In this Study I use MATLAB's communication library to design a script that simulates effects of elementary high-powered jamming on wireless signals.</p>
+      <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s/High-powered-jamming-simulation')"target="_blank" > <i class="fab fa-github"></i> Code</button>
       <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s')"target="_blank" > <i class="fas fa-scroll"></i> Notes</button>
     </div>
   </div>
@@ -210,6 +215,7 @@ h1 {
     <div class="content">
     <img src="imgs/decision_tree.png" alt="Lights" style="width:100%">
       <h4>Classifying wireless signals as healthy/jammed using Random Forest Decision Tree Algorithm</h4>
+      <p>Af</p>
       <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s')"target="_blank" > <i class="fab fa-github"></i> Code</button>
       <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s')"target="_blank" > <i class="fas fa-scroll"></i> Notes</button>
     </div>
@@ -217,7 +223,7 @@ h1 {
 
   <div class="column">
     <div class="content">
-    <img src="imgs/ttt_game.png" alt="Nature" style="width:100%">
+    <img src="imgs/ttt_game.png" alt="Nature" style="width:100% ; height: 70%">
       <h4>Tic Tac Toe Game - MIPS Assembly implementation - Player vs Computer</h4>
       <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s')"target="_blank" > <i class="fab fa-github"></i> Code</button>
     </div>
@@ -243,7 +249,7 @@ h1 {
   </div>
   <div class="column">
     <div class="content">
-    <img src="/w3images/cars3.jpg" alt="Car" style="width:100%">
+    <img src="imgs/airtraffic_gui.PNG" alt="Car" style="width:100%">
     <h4>Air Traffic Managment GUI - C# implementation</h4>
     <p>mock user interface for an air traffic control unit. Shows airplane entering and existing an air space, allows for modifying background map.</p>
     <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s')"target="_blank" > <i class="fab fa-github"></i> Code</button>
