@@ -11,7 +11,20 @@ body {
   background-color: #00A19D;
   padding: 20px;
   font-family: Arial;
+
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
+
+@keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
 
 /* Center website */
 .main {
@@ -25,7 +38,7 @@ h1 {
 }
 
 .row {
-  margin: 10px -16px;
+  /* margin: 10px -16px; */
   /* display: flex; */
   float: center;
 }
@@ -156,6 +169,9 @@ hr {
 }
 
 
+
+
+
 </style>
 </head>
 <body>
@@ -178,7 +194,7 @@ hr {
         where I'm double majoring in Computer Science and Mathematics. 
         I'm working on applying concepts I learned 
         in Data Structures & Algorithms, Software Engineering,
-        Combinatorics, and Linear Alebra to solve problems.
+        Combinatorics, and Geometry to solve problems.
         Some of the areas I'm currently working on:</p>
         <ul class="top-text">
           <li>Mathematics of Gerrymandering</li>
@@ -257,6 +273,8 @@ hr {
       <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s')"target="_blank" > <i class="fas fa-scroll"></i> Notes</button>
     </div>
   </div>
+
+
   <div class="column">
     <div class="content">
     <img src="imgs/angur.PNG" alt="Car" style="width:100%">
@@ -266,6 +284,8 @@ hr {
       <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s')"target="_blank" > <i class="fas fa-scroll"></i> Notes</button>
     </div>
   </div>
+
+
   <div class="column">
     <div class="content">
     <img src="imgs/airtraffic_gui.PNG" alt="Car" style="width:100%">
