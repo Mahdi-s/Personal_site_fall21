@@ -226,8 +226,9 @@ hr {
     <i class="fa fa-caret-down"> Filter</i>
   </button>
   <div class="dropdown-content">
+    <a href="#" onclick="filterSelection('All')">Show All</a>
     <a href="#" onclick="filterSelection('Simulation')"> Simulation Design</a>
-    <a href="#" onclick="filterSelection('Simulation')"> Compiler</a>
+    <a href="#" onclick="filterSelection('Compiler')"> Compiler</a>
     <a href="#" onclick="filterSelection('Product')"> Product Design</a>
     <a href="#" onclick="filterSelection('ML')"> Machine Learning</a>
     <a href="#" onclick="filterSelection('wire')"> Wirless Communication</a>
@@ -241,7 +242,15 @@ hr {
     <div class="content">
       <img src="imgs/matlab_jamming.jpeg" alt="Mountains" style="width:100%">
       <h4>Simulating Wireless Communication to study effects of elementary high-powered jamming attacks</h4>
-      <p>In this Study I use MATLAB's communication library to design a script that simulates effects of elementary high-powered jamming on wireless signals.</p>
+      <p>Jamming can be a challenging topic to study due to regulations set forth by the federal government. 
+        In this work I used MATLAB's communication modules to create a script that simulates effects of elementary high powered jammers 
+        on digital signals emmited from ADS-B devices. The dataset is made up of 10 columns containing neumerical information about 
+        feautures extracted from recieved signals such as Energy, bad packet ration, etc. This was part of a larger work to 
+        study capabilities of machine learning in detecting jammining attacks which you can read about 
+        <a href="https://ieeexplore.ieee.org/document/8833789">here</a>. I have made the source code that simulates elementrarty 
+        high powered jamming effects avaliable, feel free to use it in your project. Additiona logic can be baked into the 
+        steps to simulate more sophisticated jammers. If you're interested in learning more about the simulation I 
+        have attached my notes on this project below which goes into more details.</p>
       <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s/High-powered-jamming-simulation')"target="_blank" > <i class="fab fa-github"></i> Code</button>
       <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s')"target="_blank" > <i class="fas fa-scroll"></i> Notes</button>
     </div>
@@ -251,7 +260,13 @@ hr {
     <div class="content">
     <img src="imgs/decision_tree.png" alt="Lights" style="width:100%">
       <h4>Classifying wireless signals as healthy/jammed using Random Forest Decision Tree Algorithm</h4>
-      <p>Af</p>
+      <p>In order to identify jammed signals we would need to ask series of questions about the metadata. Turns out decision 
+        tree algorithms are great tools for accomplishing this taks. In the project I used python's 
+        scikit library's decision tree package to design a model that classifies healthy and jammed signals.
+        This was part of a larger work to 
+        study capabilities of machine learning in detecting jammining attacks which you can read about 
+        <a href="https://ieeexplore.ieee.org/document/8833789">here</a>. I have included the starting code and additional notes on our decision tree algorithm.
+      </p>
       <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s')"target="_blank" > <i class="fab fa-github"></i> Code</button>
       <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s')"target="_blank" > <i class="fas fa-scroll"></i> Notes</button>
     </div>
@@ -261,6 +276,8 @@ hr {
     <div class="content">
     <img src="imgs/ttt_game.png" alt="Nature" style="width:100%">
       <h4>Tic Tac Toe Game - MIPS Assembly implementation - Player vs Computer</h4>
+      <p>I desinged a bot that plays tic tac toe game with the user. At the heart of it the 
+        algorithm utilizes a series of decision tree nodes at every move and prioritizes blocking possible winning moves of the human player.</p>
       <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s')"target="_blank" > <i class="fab fa-github"></i> Code</button>
     </div>
   </div>
@@ -269,7 +286,8 @@ hr {
     <div class="content">
       <img src="imgs/pascal.png" alt="Car" style="width:100%">
       <h4>Mini Pascal to MIPS Assembly translator - Python implementaion</h4>
-      <p>Translates, and reduces pascal code to executable MIPS Assembly code</p>
+      <p>In this project I created an engine that translates, and reduces pascal code to executable MIPS Assembly code. 
+        Pascal code can contain basic arethmetics, functions, variable assignment, etc.</p>
       <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s')"target="_blank" > <i class="fab fa-github"></i> Code</button>
       <button type="button" class="btn" onclick=" window.open('https://drive.google.com/file/d/1fsDcubbnExg5KrOdlny1wHMiuiFkp2Gh/view')"target="_blank" > <i class="fas fa-scroll"></i> Notes</button>
     </div>
@@ -280,9 +298,11 @@ hr {
     <div class="content">
     <img src="imgs/angur.PNG" alt="Car" style="width:100%">
       <h4><a href="https://anguranalytics.webflow.io/" target="_blank">www.anguranalytics.com</a></h4>
-      <p>Python web application that allows users to quickly access finacial, and news data about a company traded in NYSE. Predict next day's closing price of a certain stock using an LSTM neural network trained on trading data avaliable on 30 prior days. </p>
+      <p>Given the rise of retial investors I've been wondering if there are more effective ways of analyzing company data and making sense of the prospect of an investment. 
+        My goal with Angur is to create a one stop shop where users can analyze company data from finacial statements, stock market data, and relative news.
+        Angur is a python web application that allows users to quickly access finacial, and news data about a company 
+        traded in NYSE. Predict next day's closing price of a certain stock using an LSTM neural network trained on trading data avaliable on 30 prior days. The source code </p>
       <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s')"target="_blank" > <i class="fab fa-github"></i> Code</button>
-      <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s')"target="_blank" > <i class="fas fa-scroll"></i> Notes</button>
     </div>
   </div>
 
@@ -291,7 +311,8 @@ hr {
     <div class="content">
     <img src="imgs/airtraffic_gui.PNG" alt="Car" style="width:100%">
     <h4>Air Traffic Managment GUI - C# implementation</h4>
-    <p>mock user interface for an air traffic control unit. Shows airplane entering and existing an air space, allows for modifying background map.</p>
+    <p>mock user interface for an air traffic control unit. Shows airplane entering and existing an air space along with associated flight daya, monitors plane movement 
+      for potential hazards and warns user in case of potential crash as shown in the image on the right. it also allows for modifying background map.</p>
     <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s')"target="_blank" > <i class="fab fa-github"></i> Code</button>
     <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s')"target="_blank" > <i class="fas fa-scroll"></i> Notes</button>
     </div>
@@ -299,16 +320,16 @@ hr {
 
   <div class="column">
     <div class="content">
-      <img src="/w3images/people1.jpg" alt="Car" style="width:100%">
+      <img src="/images/people1.jpg" alt="Car" style="width:100%">
       <h4>Simulating network of UAVs to extract communication information</h4>
-      <p>Developed a script that simulate network of UAVs, allowing the user to exract metainformation about the signals transmited and recieved by the UAVs. number of UAVs is determined by the user.</p>
+      <p>Studying effects of jamming on communication can be challengeing due to the regulations set forth by the federal government. 
+        In this study I used ns-3 (discrete network simulator) library to design a enviroment that simulates networks of drones communicating with other drones and ground stations. The script allows extraction of signal data being transmitted within the network.</p>
       <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s')"target="_blank" > <i class="fab fa-github"></i> Code</button>
-      <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s')"target="_blank" > <i class="fas fa-scroll"></i> Notes</button>
     </div>
   </div>
   <div class="column">
     <div class="content">
-    <img src="/w3images/people2.jpg" alt="Car" style="width:100%">
+    <img src="/images/people2.jpg" alt="Car" style="width:100%">
     <h4>Study of immposibility theorem for gerrymandering</h4>
     <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s')"target="_blank" > <i class="fab fa-github"></i> Code</button>
     <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s')"target="_blank" > <i class="fas fa-scroll"></i> Notes</button>
@@ -329,12 +350,12 @@ function filterSelection(c) {
   x = document.getElementsByClassName("column");
   if (c == "all") c = "";
   for (i = 0; i < x.length; i++) {
-    w3RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+    RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) AddClass(x[i], "show");
   }
 }
 
-function w3AddClass(element, name) {
+function AddClass(element, name) {
   var i, arr1, arr2;
   arr1 = element.className.split(" ");
   arr2 = name.split(" ");
@@ -343,7 +364,7 @@ function w3AddClass(element, name) {
   }
 }
 
-function w3RemoveClass(element, name) {
+function RemoveClass(element, name) {
   var i, arr1, arr2;
   arr1 = element.className.split(" ");
   arr2 = name.split(" ");
