@@ -205,8 +205,8 @@ hr {
         <p class="top-text">What I'm currently reading: Desiging Data Intensive Applications By Martin Kleppmann</p>
       <button type="button" class="btn" onclick=" window.open('https://www.linkedin.com/in/mahdi-saeedi-324303149/')"target="_blank" > <i class="fab fa-linkedin"></i> Linkedin</button>
       <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s')"target="_blank" > <i class="fab fa-github"></i> Github</button>
-      <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s')"target="_blank" > <i class="fas fa-blog"></i> Blog</button>
-      <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s')"target="_blank" > <i class="fas fa-scroll"></i> Resume</button>
+      <button type="button" class="btn" onclick=" window.open('https://medium.com/@mahdisaeediv')"target="_blank" > <i class="fas fa-blog"></i> Blog</button>
+      <button type="button" class="btn" onclick=" window.open('')"target="_blank" > <i class="fas fa-scroll"></i> Resume</button>
       <!-- <button type="button" class="btn" onclick=" window.open('https://www.kaggle.com/mahdi13')"target="_blank" > <i class="fab fa-kaggle"></i> Kaggle</button>
       <button type="button" class="btn" onclick=" window.open('https://www.hackerrank.com/Mahdi_saeedi')"target="_blank" ><i class="fab fa-hackerrank"></i> HackerRank</button> -->
     </div>
@@ -221,24 +221,24 @@ hr {
 <!-- Font Awesome Icon Library -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<div class="dropdown">
+<!-- <div class="dropdown">
   <button class="btn">
     <i class="fa fa-caret-down"> Filter</i>
   </button>
   <div class="dropdown-content">
-    <a href="#" onclick="filterSelection('All')">Show All</a>
-    <a href="#" onclick="filterSelection('Simulation')"> Simulation Design</a>
-    <a href="#" onclick="filterSelection('Compiler')"> Compiler</a>
-    <a href="#" onclick="filterSelection('Product')"> Product Design</a>
-    <a href="#" onclick="filterSelection('ML')"> Machine Learning</a>
-    <a href="#" onclick="filterSelection('wire')"> Wirless Communication</a>
-    <a href="#" onclick="filterSelection('gamedesign')"> Game Design</a>
+    <a  onclick="filterSelection('All')">Show All</a>
+    <a  onclick="filterSelection('Simulation')"> Simulation Design</a>
+    <a  onclick="filterSelection('Compiler')"> Compiler</a>
+    <a  onclick="filterSelection('Product')"> Product Design</a>
+    <a  onclick="filterSelection('ML')"> Machine Learning</a>
+    <a  onclick="filterSelection('wire')"> Wirless Communication</a>
+    <a  onclick="filterSelection('gamedesign')"> Game Design</a>
   </div>
 </div> -->
 
 
 <div class="row">
-  <div class="column">
+  <div class="column Simulation wire">
     <div class="content">
       <img src="imgs/matlab_jamming.jpeg" alt="Mountains" style="width:100%">
       <h4>Simulating Wireless Communication to study effects of elementary high-powered jamming attacks</h4>
@@ -252,12 +252,16 @@ hr {
         steps to simulate more sophisticated jammers. If you're interested in learning more about the simulation I 
         have attached my notes on this project below which goes into more details.</p>
       <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s/High-powered-jamming-simulation')"target="_blank" > <i class="fab fa-github"></i> Code</button>
-      <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s')"target="_blank" > <i class="fas fa-scroll"></i> Notes</button>
+      
+      <button type="button" class="btn" onclick=" 
+      window.open('https://medium.com/@mahdisaeediv/simulating-wireless-communication-to-study-effects-of-elementary-high-powered-jamming-attacks-c9139b49715f')"
+      target="_blank" > <i class="fas fa-scroll"></i> Notes</button>
+
     </div>
   </div>
 
   <div class="column">
-    <div class="content">
+    <div class="content ML wire">
     <img src="imgs/decision_tree.png" alt="Lights" style="width:100%">
       <h4>Classifying wireless signals as healthy/jammed using Random Forest Decision Tree Algorithm</h4>
       <p>In order to identify jammed signals we would need to ask series of questions about the metadata. Turns out decision 
@@ -267,74 +271,80 @@ hr {
         study capabilities of machine learning in detecting jammining attacks which you can read about 
         <a href="https://ieeexplore.ieee.org/document/8833789">here</a>. I have included the starting code and additional notes on our decision tree algorithm.
       </p>
-      <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s')"target="_blank" > <i class="fab fa-github"></i> Code</button>
-      <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s')"target="_blank" > <i class="fas fa-scroll"></i> Notes</button>
+      <button type="button" class="btn" 
+      onclick=" window.open('https://github.com/Mahdi-s/High-powered-jamming-simulation')"
+      target="_blank" > <i class="fab fa-github"></i> Code</button>
+
+      <button type="button" class="btn" 
+      onclick=" window.open('https://medium.com/@mahdisaeediv/classifying-jammed-signals-using-random-forest-decision-tree-algorithm-c4a45ea62760')
+      "target="_blank" > <i class="fas fa-scroll"></i> Notes</button>
     </div>
   </div>
 
-  <div class="column">
+  <div class="column gamedesign">
     <div class="content">
     <img src="imgs/ttt_game.png" alt="Nature" style="width:100%">
       <h4>Tic Tac Toe Game - MIPS Assembly implementation - Player vs Computer</h4>
       <p>I desinged a bot that plays tic tac toe game with the user. At the heart of it the 
         algorithm utilizes a series of decision tree nodes at every move and prioritizes blocking possible winning moves of the human player.</p>
-      <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s')"target="_blank" > <i class="fab fa-github"></i> Code</button>
+      <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s/TTT-game-Mips-Assembly')"target="_blank" > <i class="fab fa-github"></i> Code</button>
     </div>
   </div>
   
-  <div class="column">
+  <div class="column Compiler">
     <div class="content">
       <img src="imgs/pascal.png" alt="Car" style="width:100%">
       <h4>Mini Pascal to MIPS Assembly translator - Python implementaion</h4>
       <p>In this project I created an engine that translates, and reduces pascal code to executable MIPS Assembly code. 
         Pascal code can contain basic arethmetics, functions, variable assignment, etc.</p>
-      <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s')"target="_blank" > <i class="fab fa-github"></i> Code</button>
+      <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s/mini-pascal-interpreter')"target="_blank" > <i class="fab fa-github"></i> Code</button>
       <button type="button" class="btn" onclick=" window.open('https://drive.google.com/file/d/1fsDcubbnExg5KrOdlny1wHMiuiFkp2Gh/view')"target="_blank" > <i class="fas fa-scroll"></i> Notes</button>
     </div>
   </div>
 
 
   <div class="column">
-    <div class="content">
+    <div class="content Product ML">
     <img src="imgs/angur.PNG" alt="Car" style="width:100%">
       <h4><a href="https://anguranalytics.webflow.io/" target="_blank">www.anguranalytics.com</a></h4>
       <p>Given the rise of retial investors I've been wondering if there are more effective ways of analyzing company data and making sense of the prospect of an investment. 
         My goal with Angur is to create a one stop shop where users can analyze company data from finacial statements, stock market data, and relative news.
         Angur is a python web application that allows users to quickly access finacial, and news data about a company 
         traded in NYSE. Predict next day's closing price of a certain stock using an LSTM neural network trained on trading data avaliable on 30 prior days. The source code </p>
-      <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s')"target="_blank" > <i class="fab fa-github"></i> Code</button>
+      <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s/angur')"target="_blank" > <i class="fab fa-github"></i> Code</button>
+      <button type="button" class="btn" onclick=" window.open('')"target="_blank" > <i class="fas fa-video"></i> Demo</button>
+  
     </div>
   </div>
 
 
   <div class="column">
-    <div class="content">
+    <div class="content Simulation">
     <img src="imgs/airtraffic_gui.PNG" alt="Car" style="width:100%">
     <h4>Air Traffic Managment GUI - C# implementation</h4>
     <p>mock user interface for an air traffic control unit. Shows airplane entering and existing an air space along with associated flight daya, monitors plane movement 
       for potential hazards and warns user in case of potential crash as shown in the image on the right. it also allows for modifying background map.</p>
-    <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s')"target="_blank" > <i class="fab fa-github"></i> Code</button>
-    <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s')"target="_blank" > <i class="fas fa-scroll"></i> Notes</button>
+    <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s/Mock-Flight-Management-System')"target="_blank" > <i class="fab fa-github"></i> Code</button>
     </div>
   </div>
 
   <div class="column">
-    <div class="content">
+    <div class="content Simulation">
       <!-- <img src="/images/people1.jpg" alt="Car" style="width:100%"> -->
       <h4>Simulating network of UAVs to extract communication information</h4>
       <p>Studying effects of jamming on communication can be challengeing due to the regulations set forth by the federal government. 
         In this study I used ns-3 (discrete network simulator) library to design a enviroment that simulates networks of drones communicating with other drones and ground stations. The script allows extraction of signal data being transmitted within the network.</p>
-      <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s')"target="_blank" > <i class="fab fa-github"></i> Code</button>
+      <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s/UAV-Network-Simulation')"target="_blank" > <i class="fab fa-github"></i> Code</button>
     </div>
   </div>
-  <div class="column">
+
+  <!-- <div class="column">
     <div class="content">
-    <!-- <img src="/images/people2.jpg" alt="Car" style="width:100%"> -->
     <h4>Study of immposibility theorem for gerrymandering</h4>
     <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s')"target="_blank" > <i class="fab fa-github"></i> Code</button>
     <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s')"target="_blank" > <i class="fas fa-scroll"></i> Notes</button>
     </div>
-  </div>
+  </div> -->
 
 <!-- END GRID -->
 </div>
