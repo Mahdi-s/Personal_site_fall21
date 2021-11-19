@@ -242,9 +242,11 @@ hr {
     <img src="imgs/angur.gif" alt="Car" style="width:100%">
       <h4><a href="https://anguranalytics.webflow.io/" target="_blank">www.anguranalytics.com</a></h4>
       <p>Given the rise of retail investors, I've been wondering if there are more effective ways of analyzing company data and making sense of the prospect of investment. 
-        My goal with Angur is to create a one-stop-shop where users can analyze company data from financial statements, stock market data, and relative news. 
+        My goal with Angur is to create a one-stop shop where users can analyze company data from financial statements, stock market data, and relative news. 
         Angur is a python web application that allows users to access financial data and news data about a company traded on NYSE.
-         Predict the next day's closing price of a particular stock using an LSTM neural network trained on trading data available on 30 previous days.</p>
+         Predict the next day's closing price of a particular stock using an LSTM neural network trained on trading data available on 30 previous days. 
+         I am extending this work to include different comparisons of the data points available, 
+         due to that, I have shut down the server. If you would like to test this application, please reach out to me.:)</p>
       <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s/angur')"target="_blank" > <i class="fab fa-github"></i> Code</button>
       <!-- <button type="button" class="btn" onclick=" window.open('')"target="_blank" > <i class="fas fa-video"></i> Demo</button> -->
   
@@ -260,11 +262,11 @@ hr {
         In this work, I used MATLAB's communication modules to create a script that simulates the effects of elementary,
          high-powered jammers on digital signals emitted from ADS-B devices. 
          The dataset is made up of 10 columns containing numerical information about features 
-         extracted from received signals such as Energy, bad packet ratio, etc. This was part of more extensive
+         extracted from received signals such as Energy, bad packet ratio, etc. This was part of a more extensive
           work to study machine learning capabilities in detecting jamming attacks which you can read about <a href="https://ieeexplore.ieee.org/document/8833789">here</a>.  I have made the source
            code that simulates elementary, high-powered jamming effects available. Feel free to use it in your project. 
            Additional logic can be baked into the steps to manufacture more sophisticated jammers. 
-        If you're interested in learning more about the simulation, I have attached my notes on this project below, which goes into more details.
+        If you're interested in learning more about the simulation, I have attached my notes on this project below, which go into more detail.
         </p>
       <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s/High-powered-jamming-simulation')"target="_blank" > <i class="fab fa-github"></i> Code</button>
       
@@ -279,11 +281,11 @@ hr {
     <div class="content ML wire">
     <img src="imgs/decision_tree.png" alt="Lights" style="width:100%">
       <h4>Classifying wireless signals as healthy/jammed using Random Forest Decision Tree Algorithm</h4>
-      <p>To identify jammed signals, we would need to ask series of questions about the metadata. 
-        It turns out decision tree algorithms are great tools for accomplishing these tasks. 
+      <p>To identify jammed signals, we would need to ask series of questions about the signal data. 
+        It turns out decision tree algorithms are great tools for accomplishing this type of classification. 
         In the project, I used python's scikit library's decision tree package to design a model that classifies healthy and jammed signals. 
         This was part of more extensive work to study machine learning capabilities in detecting jamming attacks which you can read about <a href="https://ieeexplore.ieee.org/document/8833789">here</a>. 
-         I have included the starting code and additional notes on our decision tree algorithm.
+         I have included the code and additional notes on the decision tree algorithm which you can access below.
       </p>
       <button type="button" class="btn" 
       onclick=" window.open('https://github.com/Mahdi-s/High-powered-jamming-simulation')"
@@ -332,9 +334,9 @@ hr {
     <div class="content Simulation">
       <img src="imgs/uav.gif" alt="Car" style="width:100%">
       <h4>Simulating network of UAVs to extract communication information</h4>
-      <p>Studying the effects of jamming on communication can be challenging due to the regulations set forth by the federal government. 
-        In this study, I used the ns-3 (discrete network simulator) library to design an environment that simulates networks of drones communicating with 
-        other drones and ground stations. The script allows the extraction of signal data being transmitted within the network.</p>
+      <p> In this study, I used the ns-3 (discrete network simulator) library to design an environment that simulates networks of drones communicating with 
+        other drones and ground stations. The script allows the extraction of signal data being transmitted within the network. This information includes a signal-to-noise ratio, the drone's ID, location, signal energy, etc. ns-3 use of object factory in CPP allows for flexibility 
+        in creating different objects such as ground stations and UAVs in an intuitive manner. The script I have linked below will work with ns-3 version 3.21. </p>
       <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s/UAV-Network-Simulation')"target="_blank" > <i class="fab fa-github"></i> Code</button>
       <button type="button" class="btn" onclick=" window.open('https://ieeexplore.ieee.org/document/9491882')"target="_blank" > <i class="fas fa-scroll"></i> Published work</button>  
     </div>
