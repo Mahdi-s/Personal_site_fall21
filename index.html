@@ -72,6 +72,7 @@ h1 {
 .content {
   background-color: #FFF8E5;
   padding: 10px;
+  border-radius: 25px;
 }
 
 /* The "show" class is added to the filtered elements */
@@ -105,6 +106,7 @@ h1 {
   font-size: 16px;
   border: none;
   outline: none;
+  border-radius: 25px;
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -168,6 +170,15 @@ hr {
             margin-bottom: 50px;
 }
 
+#rcorners1 {
+  border-radius: 25px;
+}
+
+.leftside, .rightside {
+  height: 100hv;
+  width: 100%;
+}
+
 
 
 
@@ -180,199 +191,212 @@ hr {
 
 
 <!-- MAIN (Center website) -->
-<div class="main">
+<!-- <div class="main"> -->
 
-  <div class="wrapper">
+  <div class="main row no-gutters">
+    <div class="col no-gutters">
+      <div class="leftside">
+        <div class="wrapper">
 
-    <div class="pic-element">
-      <img src="imgs/yoga_bitmoji.png" alt="Bitmoji" style="width:100%">
+          <div class="pic-element">
+            <img src="imgs/waving.png" alt="Bitmoji" style="width:100%">
+          </div>
+      
+          <div class="text-element">
+            <p class="top-text">Hi, welcome to my little corner of the cyberland. My name is Mahdi, and I'm a software engineer and a student at the 
+              University of North Dakota, where I'm double majoring in Computer Science and Mathematics. 
+              I'm applying concepts I learned in Data Structures & Algorithms, Software Engineering, Combinatorics, and Geometry to solve problems. 
+              Some of the areas I'm currently working on:</p>
+              <ul class="top-text">
+                <li>Mathematics of Gerrymandering</li>
+                <li>A more effective way of analyzing company data for investment purposes - focus on retail investors</li>
+                <li>How to maxmize productivity?</li>
+              </ul>
+              <p class="top-text">I've included a list of my projects below, with source code and some additional notes. 
+                If you'd like to reach out, please use mahdisaeediv@gmail.com. </p>
+              <p class="top-text">My current read: Designing Data-Intensive Applications By Martin Kleppmann.</p>
+            <button type="button" class="btn" onclick=" window.open('https://www.linkedin.com/in/mahdi-saeedi-324303149/')"target="_blank" > <i class="fab fa-linkedin"></i> Linkedin</button>
+            <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s')"target="_blank" > <i class="fab fa-github"></i> Github</button>
+            <button type="button" class="btn" onclick=" window.open('https://medium.com/@mahdisaeediv')"target="_blank" > <i class="fas fa-blog"></i> Blog</button>
+            <!-- <button type="button" class="btn" onclick=" window.open('https://drive.google.com/file/d/1notlTbWbfChmzOOMyHgso7fAi2II6ban/view?usp=sharing')"target="_blank" > <i class="fas fa-scroll"></i> Resume</button> -->
+            <!-- <button type="button" class="btn" onclick=" window.open('https://www.kaggle.com/mahdi13')"target="_blank" > <i class="fab fa-kaggle"></i> Kaggle</button>
+            <button type="button" class="btn" onclick=" window.open('https://www.hackerrank.com/Mahdi_saeedi')"target="_blank" ><i class="fab fa-hackerrank"></i> HackerRank</button> -->
+          </div>
+          
+        </div>
+      </div>
     </div>
+    <div class="col no-gutters">
+      <div class="rightside">
 
-    <div class="text-element">
-      <p class="top-text">Hi, welcome to my little corner of the cyberland. My name is Mahdi, and I'm a software engineer and a student at the 
-        University of North Dakota, where I'm double majoring in Computer Science and Mathematics. 
-        I'm applying concepts I learned in Data Structures & Algorithms, Software Engineering, Combinatorics, and Geometry to solve problems. 
-        Some of the areas I'm currently working on:</p>
-        <ul class="top-text">
-          <li>Mathematics of Gerrymandering</li>
-          <li>A more effective way of analyzing company data for investment purposes - focus on retail investors</li>
-          <li>How to maxmize productivity?</li>
-        </ul>
-        <p class="top-text">I've included a list of my projects below, with source code and some additional notes. 
-          If you'd like to reach out, please use mahdisaeediv@gmail.com. </p>
-        <p class="top-text">My current read: Designing Data-Intensive Applications By Martin Kleppmann.</p>
-      <button type="button" class="btn" onclick=" window.open('https://www.linkedin.com/in/mahdi-saeedi-324303149/')"target="_blank" > <i class="fab fa-linkedin"></i> Linkedin</button>
-      <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s')"target="_blank" > <i class="fab fa-github"></i> Github</button>
-      <button type="button" class="btn" onclick=" window.open('https://medium.com/@mahdisaeediv')"target="_blank" > <i class="fas fa-blog"></i> Blog</button>
-      <!-- <button type="button" class="btn" onclick=" window.open('https://drive.google.com/file/d/1notlTbWbfChmzOOMyHgso7fAi2II6ban/view?usp=sharing')"target="_blank" > <i class="fas fa-scroll"></i> Resume</button> -->
-      <!-- <button type="button" class="btn" onclick=" window.open('https://www.kaggle.com/mahdi13')"target="_blank" > <i class="fab fa-kaggle"></i> Kaggle</button>
-      <button type="button" class="btn" onclick=" window.open('https://www.hackerrank.com/Mahdi_saeedi')"target="_blank" ><i class="fab fa-hackerrank"></i> HackerRank</button> -->
+        <h2 class="top-text">Projects</h2>
+
+        <!-- Font Awesome Icon Library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <!-- <div class="dropdown">
+          <button class="btn">
+            <i class="fa fa-caret-down"> Filter</i>
+          </button>
+          <div class="dropdown-content">
+            <a  onclick="filterSelection('All')">Show All</a>
+            <a  onclick="filterSelection('Simulation')"> Simulation Design</a>
+            <a  onclick="filterSelection('Compiler')"> Compiler</a>
+            <a  onclick="filterSelection('Product')"> Product Design</a>
+            <a  onclick="filterSelection('ML')"> Machine Learning</a>
+            <a  onclick="filterSelection('wire')"> Wirless Communication</a>
+            <a  onclick="filterSelection('gamedesign')"> Game Design</a>
+          </div>
+        </div> -->
+        
+        
+        <div class="row">
+        
+          
+          <div class="column" >
+            <div class="content Product ML" id="rcorners1">
+            <img id="rcorners1" src="imgs/gerry.gif" alt="Car" style="width:100%">
+            <h4>Studying Mathematics of Partisan Gerrymandering</h4>
+              <p>Distrust with the electoral system in the United States has grown over the years. In this project, we’ll explore some of the mathematics behind redistricting 
+                in order to find a solution for gerrymandering. I have prepared a more extensive discussion on the matter; please access it using the link below. 
+                I have also designed an online partisan gerrymandering calculator that lets us simulate an instance of state redistricting at 
+                various levels of resolution for party preference spread among the population. Please find a demo and link to the app below. </p>
+              <button type="button" class="btn" onclick=" window.open('https://medium.com/@mahdisaeediv/redistricting-courts-challenges-and-potential-solutions-1c38690e7ff')"target="_blank" > <i class="fas fa-scroll"></i> Notes</button>
+              <button type="button" class="btn" onclick=" window.open('https://pg-calculator.anvil.app/')"target="_blank" > <i class="fas fa-project-diagram"></i> PG-Calculator</button>
+              <button type="button" class="btn" onclick=" window.open('https://www.youtube.com/watch?v=VqcE32C769I&t=1s')"target="_blank" > <i class="fas fa-video"></i> Demo</button>
+          
+            </div>
+          </div>
+        
+          <div class="column">
+            <div class="content Product ML">
+            <img id="rcorners1" src="imgs/angur.gif" alt="Car" style="width:100%">
+              <h4><a href="https://anguranalytics.webflow.io/" target="_blank">www.anguranalytics.com</a></h4>
+              <p>Given the rise of retail investors, I've been wondering if there are more effective ways of analyzing company data and making sense of the prospect of investment. 
+                My goal with Angur is to create a one-stop shop where users can analyze company data from financial statements, stock market data, and relative news. 
+                Angur is a python web application that allows users to access financial data and news data about a company traded on NYSE.
+                 Predict the next day's closing price of a particular stock using an LSTM neural network trained on trading data available on 30 previous days. 
+                 I am extending this work to include different comparisons of the data points available, 
+                 due to that, I have shut down the server. If you would like to test this application, please reach out to me.:)</p>
+              <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s/angur')"target="_blank" > <i class="fab fa-github"></i> Code</button>
+              <!-- <button type="button" class="btn" onclick=" window.open('')"target="_blank" > <i class="fas fa-video"></i> Demo</button> -->
+          
+            </div>
+          </div>
+        
+        
+          <div class="column Simulation wire">
+            <div class="content">
+              <img id="rcorners1" src="imgs/matlab_jamming2.gif" alt="Mountains" style="width:100%">
+              <h4>Simulating Wireless Communication to study effects of elementary high-powered jamming attacks</h4>
+              <p>Jamming can be a challenging topic to study due to regulations set forth by the federal government. 
+                In this work, I used MATLAB's communication modules to create a script that simulates the effects of elementary,
+                 high-powered jammers on digital signals emitted from ADS-B devices. 
+                 The dataset is made up of 10 columns containing numerical information about features 
+                 extracted from received signals such as Energy, bad packet ratio, etc. This was part of a more extensive
+                  work to study machine learning capabilities in detecting jamming attacks which you can read about <a href="https://ieeexplore.ieee.org/document/8833789">here</a>.  I have made the source
+                   code that simulates elementary, high-powered jamming effects available. Feel free to use it in your project. 
+                   Additional logic can be baked into the steps to manufacture more sophisticated jammers. 
+                If you're interested in learning more about the simulation, I have attached my notes on this project below, which go into more detail.
+                </p>
+              <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s/High-powered-jamming-simulation')"target="_blank" > <i class="fab fa-github"></i> Code</button>
+              
+              <button type="button" class="btn" onclick=" 
+              window.open('https://medium.com/@mahdisaeediv/simulating-wireless-communication-to-study-effects-of-elementary-high-powered-jamming-attacks-c9139b49715f')"
+              target="_blank" > <i class="fas fa-scroll"></i> Notes</button>
+              <button type="button" class="btn" onclick=" window.open('https://ieeexplore.ieee.org/document/8833789')"target="_blank" > <i class="fas fa-scroll"></i> Published work</button>  
+        
+        
+            </div>
+          </div>
+        
+          <div class="column">
+            <div class="content ML wire">
+            <img src="imgs/decision_tree.png" alt="Lights" style="width:100%">
+              <h4>Classifying wireless signals as healthy/jammed using Random Forest Decision Tree Algorithm</h4>
+              <p>To identify jammed signals, we would need to ask series of questions about the signal data. 
+                It turns out decision tree algorithms are great tools for accomplishing this type of classification. 
+                In the project, I used python's scikit library's decision tree package to design a model that classifies healthy and jammed signals. 
+                This was part of more extensive work to study machine learning capabilities in detecting jamming attacks which you can read about <a href="https://ieeexplore.ieee.org/document/8833789">here</a>. 
+                 I have included the code and additional notes on the decision tree algorithm which you can access below.
+              </p>
+              <button type="button" class="btn" 
+              onclick=" window.open('https://github.com/Mahdi-s/High-powered-jamming-simulation')"
+              target="_blank" > <i class="fab fa-github"></i> Code</button>
+        
+              <button type="button" class="btn" 
+              onclick=" window.open('https://medium.com/@mahdisaeediv/classifying-jammed-signals-using-random-forest-decision-tree-algorithm-c4a45ea62760')
+              "target="_blank" > <i class="fas fa-scroll"></i> Notes</button>
+            </div>
+          </div>
+        
+          <div class="column Compiler">
+            <div class="content">
+              <img id="rcorners1" src="imgs/pascal.png" alt="Car" style="width:100%">
+              <h4>Mini Pascal to MIPS Assembly translator - Python implementaion</h4>
+              <p>I created an engine that translates and reduces pascal code to executable MIPS Assembly code in this project. 
+                Pascal code can contain basic arithmetic, functions, variable assignment, etc.</p>
+              <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s/mini-pascal-interpreter')"target="_blank" > <i class="fab fa-github"></i> Code</button>
+              <button type="button" class="btn" onclick=" window.open('https://drive.google.com/file/d/1fsDcubbnExg5KrOdlny1wHMiuiFkp2Gh/view')"target="_blank" > <i class="fas fa-scroll"></i> Notes</button>
+            </div>
+          </div>
+        
+          <div class="column gamedesign">
+            <div class="content">
+            <img id="rcorners1" src="imgs/ttt_game.png" alt="Nature" style="width:100%">
+              <h4>Tic Tac Toe Game - MIPS Assembly implementation - Player vs Computer</h4>
+              <p>I designed a bot that plays a tic tac toe game with the user. 
+                At its heart, the algorithm utilizes a series of decision tree nodes at every move and prioritizes blocking possible winning moves of the human player.</p>
+              <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s/TTT-game-Mips-Assembly')"target="_blank" > <i class="fab fa-github"></i> Code</button>
+            </div>
+          </div>
+          
+        
+          <div class="column">
+            <div class="content Simulation">
+            <img id="rcorners1" src="imgs/airtraffic_gui.PNG" alt="Car" style="width:100%">
+            <h4>Air Traffic Managment GUI - C# implementation</h4>
+            <p>Mock user interface for an air traffic control unit. Shows airplane entering and 
+               exiting an air space and associated flight data monitors plane movement for potential hazards.
+               It warns the user in case of a possible crash, as shown in the image on the right. It also allows for modifying the background map.</p>
+            <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s/Mock-Flight-Management-System')"target="_blank" > <i class="fab fa-github"></i> Code</button>
+            </div>
+          </div>
+        
+          <div class="column">
+            <div class="content Simulation">
+              <img id="rcorners1" src="imgs/uav.gif" alt="Car" style="width:100%">
+              <h4>Simulating network of UAVs to extract communication information</h4>
+              <p> In this study, I used the ns-3 (discrete network simulator) library to design an environment that simulates networks of drones communicating with 
+                other drones and ground stations. The script allows the extraction of signal data being transmitted within the network. This information includes a signal-to-noise ratio, the drone's ID, location, signal energy, etc. ns-3 use of object factory in CPP allows for flexibility 
+                in creating different objects such as ground stations and UAVs in an intuitive manner. The script I have linked below will work with ns-3 version 3.21. </p>
+              <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s/UAV-Network-Simulation')"target="_blank" > <i class="fab fa-github"></i> Code</button>
+              <button type="button" class="btn" onclick=" window.open('https://ieeexplore.ieee.org/document/9491882')"target="_blank" > <i class="fas fa-scroll"></i> Published work</button>  
+            </div>
+          </div>
+        
+          <!-- <div class="column">
+            <div class="content">
+            <h4>Study of immposibility theorem for gerrymandering</h4>
+            <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s')"target="_blank" > <i class="fab fa-github"></i> Code</button>
+            <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s')"target="_blank" > <i class="fas fa-scroll"></i> Notes</button>
+            </div>
+          </div> -->
+        
+        <!-- END GRID -->
+        </div>
+      </div>
     </div>
-    
   </div>
+
+
   
 
 <!-- <hr> -->
 
-<h2 class="top-text">Projects</h2>
-
-<!-- Font Awesome Icon Library -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<!-- <div class="dropdown">
-  <button class="btn">
-    <i class="fa fa-caret-down"> Filter</i>
-  </button>
-  <div class="dropdown-content">
-    <a  onclick="filterSelection('All')">Show All</a>
-    <a  onclick="filterSelection('Simulation')"> Simulation Design</a>
-    <a  onclick="filterSelection('Compiler')"> Compiler</a>
-    <a  onclick="filterSelection('Product')"> Product Design</a>
-    <a  onclick="filterSelection('ML')"> Machine Learning</a>
-    <a  onclick="filterSelection('wire')"> Wirless Communication</a>
-    <a  onclick="filterSelection('gamedesign')"> Game Design</a>
-  </div>
-</div> -->
-
-
-<div class="row">
-
-  
-  <div class="column">
-    <div class="content Product ML">
-    <img src="imgs/gerry.gif" alt="Car" style="width:100%">
-    <h4>Studying Mathematics of Partisan Gerrymandering</h4>
-      <p>Distrust with the electoral system in the United States has grown over the years. In this project, we’ll explore some of the mathematics behind redistricting 
-        in order to find a solution for gerrymandering. I have prepared a more extensive discussion on the matter; please access it using the link below. 
-        I have also designed an online partisan gerrymandering calculator that lets us simulate an instance of state redistricting at 
-        various levels of resolution for party preference spread among the population. Please find a demo and link to the app below. </p>
-      <button type="button" class="btn" onclick=" window.open('https://medium.com/@mahdisaeediv/redistricting-courts-challenges-and-potential-solutions-1c38690e7ff')"target="_blank" > <i class="fas fa-scroll"></i> Notes</button>
-      <button type="button" class="btn" onclick=" window.open('https://pg-calculator.anvil.app/')"target="_blank" > <i class="fas fa-project-diagram"></i> PG-Calculator</button>
-      <button type="button" class="btn" onclick=" window.open('https://www.youtube.com/watch?v=VqcE32C769I&t=1s')"target="_blank" > <i class="fas fa-video"></i> Demo</button>
-  
-    </div>
-  </div>
-
-  <div class="column">
-    <div class="content Product ML">
-    <img src="imgs/angur.gif" alt="Car" style="width:100%">
-      <h4><a href="https://anguranalytics.webflow.io/" target="_blank">www.anguranalytics.com</a></h4>
-      <p>Given the rise of retail investors, I've been wondering if there are more effective ways of analyzing company data and making sense of the prospect of investment. 
-        My goal with Angur is to create a one-stop shop where users can analyze company data from financial statements, stock market data, and relative news. 
-        Angur is a python web application that allows users to access financial data and news data about a company traded on NYSE.
-         Predict the next day's closing price of a particular stock using an LSTM neural network trained on trading data available on 30 previous days. 
-         I am extending this work to include different comparisons of the data points available, 
-         due to that, I have shut down the server. If you would like to test this application, please reach out to me.:)</p>
-      <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s/angur')"target="_blank" > <i class="fab fa-github"></i> Code</button>
-      <!-- <button type="button" class="btn" onclick=" window.open('')"target="_blank" > <i class="fas fa-video"></i> Demo</button> -->
-  
-    </div>
-  </div>
-
-
-  <div class="column Simulation wire">
-    <div class="content">
-      <img src="imgs/matlab_jamming2.gif" alt="Mountains" style="width:100%">
-      <h4>Simulating Wireless Communication to study effects of elementary high-powered jamming attacks</h4>
-      <p>Jamming can be a challenging topic to study due to regulations set forth by the federal government. 
-        In this work, I used MATLAB's communication modules to create a script that simulates the effects of elementary,
-         high-powered jammers on digital signals emitted from ADS-B devices. 
-         The dataset is made up of 10 columns containing numerical information about features 
-         extracted from received signals such as Energy, bad packet ratio, etc. This was part of a more extensive
-          work to study machine learning capabilities in detecting jamming attacks which you can read about <a href="https://ieeexplore.ieee.org/document/8833789">here</a>.  I have made the source
-           code that simulates elementary, high-powered jamming effects available. Feel free to use it in your project. 
-           Additional logic can be baked into the steps to manufacture more sophisticated jammers. 
-        If you're interested in learning more about the simulation, I have attached my notes on this project below, which go into more detail.
-        </p>
-      <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s/High-powered-jamming-simulation')"target="_blank" > <i class="fab fa-github"></i> Code</button>
-      
-      <button type="button" class="btn" onclick=" 
-      window.open('https://medium.com/@mahdisaeediv/simulating-wireless-communication-to-study-effects-of-elementary-high-powered-jamming-attacks-c9139b49715f')"
-      target="_blank" > <i class="fas fa-scroll"></i> Notes</button>
-      <button type="button" class="btn" onclick=" window.open('https://ieeexplore.ieee.org/document/8833789')"target="_blank" > <i class="fas fa-scroll"></i> Published work</button>  
-
-
-    </div>
-  </div>
-
-  <div class="column">
-    <div class="content ML wire">
-    <img src="imgs/decision_tree.png" alt="Lights" style="width:100%">
-      <h4>Classifying wireless signals as healthy/jammed using Random Forest Decision Tree Algorithm</h4>
-      <p>To identify jammed signals, we would need to ask series of questions about the signal data. 
-        It turns out decision tree algorithms are great tools for accomplishing this type of classification. 
-        In the project, I used python's scikit library's decision tree package to design a model that classifies healthy and jammed signals. 
-        This was part of more extensive work to study machine learning capabilities in detecting jamming attacks which you can read about <a href="https://ieeexplore.ieee.org/document/8833789">here</a>. 
-         I have included the code and additional notes on the decision tree algorithm which you can access below.
-      </p>
-      <button type="button" class="btn" 
-      onclick=" window.open('https://github.com/Mahdi-s/High-powered-jamming-simulation')"
-      target="_blank" > <i class="fab fa-github"></i> Code</button>
-
-      <button type="button" class="btn" 
-      onclick=" window.open('https://medium.com/@mahdisaeediv/classifying-jammed-signals-using-random-forest-decision-tree-algorithm-c4a45ea62760')
-      "target="_blank" > <i class="fas fa-scroll"></i> Notes</button>
-    </div>
-  </div>
-
-  <div class="column Compiler">
-    <div class="content">
-      <img src="imgs/pascal.png" alt="Car" style="width:100%">
-      <h4>Mini Pascal to MIPS Assembly translator - Python implementaion</h4>
-      <p>I created an engine that translates and reduces pascal code to executable MIPS Assembly code in this project. 
-        Pascal code can contain basic arithmetic, functions, variable assignment, etc.</p>
-      <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s/mini-pascal-interpreter')"target="_blank" > <i class="fab fa-github"></i> Code</button>
-      <button type="button" class="btn" onclick=" window.open('https://drive.google.com/file/d/1fsDcubbnExg5KrOdlny1wHMiuiFkp2Gh/view')"target="_blank" > <i class="fas fa-scroll"></i> Notes</button>
-    </div>
-  </div>
-
-  <div class="column gamedesign">
-    <div class="content">
-    <img src="imgs/ttt_game.png" alt="Nature" style="width:100%">
-      <h4>Tic Tac Toe Game - MIPS Assembly implementation - Player vs Computer</h4>
-      <p>I designed a bot that plays a tic tac toe game with the user. 
-        At its heart, the algorithm utilizes a series of decision tree nodes at every move and prioritizes blocking possible winning moves of the human player.</p>
-      <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s/TTT-game-Mips-Assembly')"target="_blank" > <i class="fab fa-github"></i> Code</button>
-    </div>
-  </div>
-  
-
-  <div class="column">
-    <div class="content Simulation">
-    <img src="imgs/airtraffic_gui.PNG" alt="Car" style="width:100%">
-    <h4>Air Traffic Managment GUI - C# implementation</h4>
-    <p>Mock user interface for an air traffic control unit. Shows airplane entering and 
-       exiting an air space and associated flight data monitors plane movement for potential hazards.
-       It warns the user in case of a possible crash, as shown in the image on the right. It also allows for modifying the background map.</p>
-    <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s/Mock-Flight-Management-System')"target="_blank" > <i class="fab fa-github"></i> Code</button>
-    </div>
-  </div>
-
-  <div class="column">
-    <div class="content Simulation">
-      <img src="imgs/uav.gif" alt="Car" style="width:100%">
-      <h4>Simulating network of UAVs to extract communication information</h4>
-      <p> In this study, I used the ns-3 (discrete network simulator) library to design an environment that simulates networks of drones communicating with 
-        other drones and ground stations. The script allows the extraction of signal data being transmitted within the network. This information includes a signal-to-noise ratio, the drone's ID, location, signal energy, etc. ns-3 use of object factory in CPP allows for flexibility 
-        in creating different objects such as ground stations and UAVs in an intuitive manner. The script I have linked below will work with ns-3 version 3.21. </p>
-      <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s/UAV-Network-Simulation')"target="_blank" > <i class="fab fa-github"></i> Code</button>
-      <button type="button" class="btn" onclick=" window.open('https://ieeexplore.ieee.org/document/9491882')"target="_blank" > <i class="fas fa-scroll"></i> Published work</button>  
-    </div>
-  </div>
-
-  <!-- <div class="column">
-    <div class="content">
-    <h4>Study of immposibility theorem for gerrymandering</h4>
-    <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s')"target="_blank" > <i class="fab fa-github"></i> Code</button>
-    <button type="button" class="btn" onclick=" window.open('https://github.com/Mahdi-s')"target="_blank" > <i class="fas fa-scroll"></i> Notes</button>
-    </div>
-  </div> -->
-
-<!-- END GRID -->
-</div>
 
 <!-- END MAIN -->
-</div>
+<!-- </div> -->
 
 
 <script>
